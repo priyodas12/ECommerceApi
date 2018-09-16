@@ -1,0 +1,7 @@
+#test json file through postman
+{
+    "articleId": 14545,
+    "articleName": "Sofa",
+    "articlePrice": 3900.45,
+    "articleDesc": "brown color Sofa 300*70"
+}
