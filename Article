@@ -1,7 +1,9 @@
-package com.ecommerce.application;
+package com.ecommerce.application.beans;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Entity
 public class Article {
 	
 	@Id
@@ -9,20 +11,20 @@ public class Article {
 	private String articleName;
 	private double articlePrice;
 	private String articleDesc;
-	private boolean buyable;
+	
 	
 	
 	public Article() {
 		System.out.println("Zero args constructor");
 	}
 	
-	public Article(int articleId, String articleName, double articlePrice, String articleDesc, boolean isBuyable) {
+	public Article(int articleId, String articleName, double articlePrice, String articleDesc) {
 		super();
 		this.articleId = articleId;
 		this.articleName = articleName;
 		this.articlePrice = articlePrice;
 		this.articleDesc = articleDesc;
-		this.buyable = isBuyable;
+		
 	}
 	
 	public int getArticleId() {
@@ -49,11 +51,6 @@ public class Article {
 	public void setArticleDesc(String articleDesc) {
 		this.articleDesc = articleDesc;
 	}
-	public boolean isBuyable() {
-		return isBuyable();
-	}
-	public void setBuyable(boolean isBuyable) {
-		this.buyable = isBuyable;
-	}
+	
 	
 }
