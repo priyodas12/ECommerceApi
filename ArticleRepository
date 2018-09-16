@@ -1,6 +1,8 @@
-package com.ecommerce.application;
+package com.ecommerce.application.repository;
 
 import org.springframework.data.repository.CrudRepository;
+
+import com.ecommerce.application.beans.Article;
 
 public interface ArticleRepository extends CrudRepository<Article,Integer> {
 
